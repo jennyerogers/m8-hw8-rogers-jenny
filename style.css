@@ -39,12 +39,27 @@ header {
 header a {
   font-size: 1.5rem;
   color: var(--off-white);
+  transition: 200ms;
+}
+
+header a:hover {
+  background-color: rgb(178, 124, 214);
+  color: black;
+  padding: 5px;
+  border-color: purple;
+  font-family: sans-serif;
+
 }
 /* end header link animations */
 
 /* article link transitions */
-main a {
+main a:hover{
   color: var(--danger-color);
+  transition: 200ms;
+  background-color: rgb(255, 209, 246);
+  color:rgb(179, 49, 191);
+  padding: 8px; 
+  border-radius: 20px;
 }
 /* end article link transitions */
 
@@ -100,8 +115,22 @@ section.hero > button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: ba
 }
-
+section.hero > button:hover {
+  color: black;
+  background-color: rgb(178, 124, 214);
+  font-family: sans-serif;
+  animation: hover 1s infinite alternate linear;
+}
+@keyframes hover {
+  from {
+    transform: translateY(0px)
+  }
+  to {
+    transform: translateY(-8px)
+  }
+}
 main article {
   padding: 48px 96px;
 }
